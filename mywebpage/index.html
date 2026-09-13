@@ -7,7 +7,11 @@
 <!-- зона заголовка html, тег <title> - строка, которую браузер отображает на вкладках над страницами, <meta> и <link> сообщают технические сведения для браузера, например, что файл имеет кодировку Юникод (utf-8) -->
 
 	<head>
-		<title>Личная страница Веры Кузнецовой</title>
+		<link rel="preconnect" href="https://googleapis.com">
+		<link rel="preconnect" href="https://gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Tiny5&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+
+		<title>Личная страница Ульяны Медведевой</title>
 	 	<!-- Required meta tags -->
 	 	<meta charset="utf-8">
 	 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,7 +39,7 @@
 				<nav class="collapse navbar-collapse" id="bs-navbar"> 
 					<ul class="nav navbar-nav navbar-right"> 
 						<li> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2026/index.html">Страница курса</a> </li> 
-						<li> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2026/baling_261.html">Страница группы</a> </li> 
+						<li> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2026/baling_263.html">Страница группы</a> </li> 
 <!-- поправьте номер группы в URL, если нужно (от 1 до 4) -->
 					</ul>
 				</nav> 
@@ -44,27 +48,27 @@
 
 <!-- начинается шапка. у тега header есть атрибут style, который задает цвет фона и отступы. поменяйте значения атрибутов и посмотрите, как изменится страница -->
 
-		<header style="background-color:darkred; padding-top:70px; "> 
+		<header style="background-image: url('фон1.jpg');background-size: cover; padding-top:150px; padding-bottom:100px; "> 
 			<div class="container"> 
 				<div class="row">
 					<div class="col-md-4">
 						<br><br>
 <!-- здесь и дальше нужно поменять весь содержательный текст, чтобы получилась ваша личная страница -->
-						<h1 style="color:pink;font-size:50px">Ульяна Медведева</h1>
+						<h1 style="color: #ebcc02; font-size:45px; font-family: 'Press Start 2P', system-ui; line-height: 1.5;">Ульяна Медведева</h1>
 						<hr> <!-- это горизонтальная линия -->
-						<p><i>Человек, умеющий <b>создавать</i> HTML</b></p> 
+						<p style="color: #ebcc02; font-size:25px; font-family: 'Tiny5', system-ui; ">Студентка первого курса<i>"Фундаментальной и компьютерной лингвистики"</i></p> 
 					</div>
 					<div class="col-md-4">
 <!-- img - тег для вставки изображений. Мы использовали атрибут style, чтобы задать размер изображения и ширину рамки-->
 <!-- Измените URL на URL вашей фотографии, а также настройте размер изображения -->
-<img src="myphoto.jpg" style="height:320px; margin:20px 20px 40px 20px; " >
+<img src="me.jpg" style="height:500px; margin:20px 20px 40px 60px; " >
 					</div>
 				</div>
 			</div>
 		</header>
 
 <!-- часть страницы, которая под шапкой -->
-		<section id="portfolio">
+		<section id="portfolio" style="background-color:black ">
 			<div class="container">
 
 <!-- атрибут col-md-... говорит, что контент будет разделен на несколько столбцов, их ширина соотносится как 3 - 6 - 3 (Bootstrap использует воображаемую сетку из 12 равных по ширине колонок) -->
@@ -72,51 +76,57 @@
 
 <!-- <article> не влияет на оформление, но помогает структурировать контент на осмысленые разделы -->
 					<article>
-						<h3>Место учебы</h3>
-						<p>Фундаментальная и прикладная лингвистика, НИУ ВШЭ, Москва</p>
+						<h3 style="color: #ebcc02; font-size:25px; font-family: 'Press Start 2P', system-ui; line-height: 1.5;">Место учебы</h3>
+						<p style="color: #ebcc02; font-size:20px; font-family: 'Zen Kurenaido', system-ui; line-height: 1.5;">Фундаментальная и прикладная лингвистика, НИУ ВШЭ, Москва</p>
 					</article>
 					<article>
-						<h3>Родной город</h3>
-						<p>Москва</p>
+						<h3 style="color: #ebcc02; font-size:25px; font-family: 'Press Start 2P', system-ui; line-height: 1.5;">Родной город</h3>
+						<p style="color: #ebcc02; font-size:20px; font-family: 'Zen Kurenaido', system-ui; line-height: 1.5;">Саранск, Республика Мордовия</p>
 					</article>
 					<article>
-						<h3>Школа</h3>
+						<h3 style="color: #ebcc02; font-size:25px; font-family: 'Press Start 2P', system-ui; line-height: 1.5;">Школа</h3>
 <!-- когда будете менять текст, не используйте бюрократических слов типа ГБОУ СОШ, ну пожаалуйста -->
-						<p>СУНЦ НГУ</p>
+						<p style="color: #ebcc02; font-size:20px; font-family: 'Zen Kurenaido', system-ui; line-height: 1.5;">1-9 класс: просто МОУ СОШ №24, учила углублённо английский</p>
+						<p style="color: #ebcc02; font-size:20px; font-family: 'Zen Kurenaido', system-ui; line-height: 1.5;">10-11 класс: Лицей МГУ им. Н. П. Огарёва, математическо-информатический класс <i style="font-size:17px">(да-да...)</i></p>
 					</article>
 				</div>
 
 				<div class="col-md-6">
 					<article>
-						<h3>Тут можно написать</h3>
-						<p>Еще много много много много много много <br>
-						много <br>
-						много <br>
-						много <br>
-						много <br>
-						много <br>
-						много <br>
-						много <br>
-						всего о себе</p>
+						<h3 style="color: #ebcc02; font-size:40px; font-family: 'Press Start 2P', system-ui; line-height: 1.5;text-align: center;">Обо мне</h3>
+						<p style="color: #ebcc02; font-size:25px; font-family: 'Zen Kurenaido', system-ui; line-height: 1.5; text-align: center;">
+						Я 4 года выбирала техническую профессию, а в итоге после одного просмотренного фильма, я поняла, что мое место здесь)) <br>
+						Но помимо просмотра фильмов у меня ещё <b><i>оооооооооооооочень</i></b> много хобби</p>
+						<p style="color: #ebcc02; font-size:17px; font-family: 'Zen Kurenaido', system-ui; line-height: 1.5;">- Например, я обожаю <b>рисовать</b>, особенно портреты в графике <br>
+						- Я увлекаюсь <b>фото- и видеосъемкой</b>, фотошопом и монтажом и могу воплотить любую <i style="font-size:15px;">(даже самую неожиданную!!)</i> идею в жизнь <br>
+						- Умею очень делать очень много <b>handmade</b> вещей: от украшений до объемных бумажных фигурок <br>
+						- Люблю <b>путешествовать</b> и знакомиться с новыми людьми, а потом сохранять воспоминания от поездки в коллаже из этикеток, кроссвордов, билетов... <br>
+						- Мне нравится <b>слушать музыку</b> <i style="font-size: 15px">(кажется, почти любую)</i> <br>
+						- Я посвятила 7 лет жизни <b>танцам</b>, и очень хочу продолжать это дело! <br>
+						- <i>А ещё я веду соцсети)</i> </p>
+						<p style="color: #ebcc02; font-size:25px; font-family: 'Zen Kurenaido', system-ui; line-height: 1.5; text-align: center;margin-bottom: 30px;">И я обожаю кошек</p>
 					</article>
 				</div>
 
 				<div class="col-md-3">
-					<h3>Я в соцсетях</h3>
+					<h3 style="color: #ebcc02; font-size:25px; font-family: 'Press Start 2P', system-ui; line-height: 1.5;">Я в соцсетях</h3>
 <!-- тег <ul> - unordered list. Еще бывает тег <ol> -->
 					<ul>
-						<li>VK</li>
-						<li>Discord</li>
-						<li>Telegram</li>
+						<li style="color: #ebcc02; font-size:20px; font-family: 'Tiny5', system-ui; ">VK <br>
+						<span style="font-size:17px; font-family: 'Zen Kurenaido',system-ui;">vk.com/iamaseledka</span></li>
+						<li style="color: #ebcc02; font-size:20px; font-family: 'Tiny5', system-ui; ">Telegram <br>
+						<span style="font-size:17px; font-family: 'Zen Kurenaido',system-ui;">@koshka_aaa</span></li>
+						<li style="color: #ebcc02; font-size:20px; font-family: 'Tiny5', system-ui; ">Gmail <br>
+						<span style="font-size:17px; font-family: 'Zen Kurenaido',system-ui;">medvedevaulana39@gmail.com</span></li>
 					</ul>
 				</div>
 			</div>
 		</section>
 
 <!-- это подвал. В этой части страницы обычно ставят копирайт (с помощью символа &copy;) и пишут об истории создания страницы. Поставьте свой копирайт -->
-		<footer class="bs-docs-footer"> 
+		<footer class="bs-docs-footer" style="background-color: black;"> 
 			<div class="container"> 
-				<p style="text-align:right; ">&copy; В. Кузнецова, 2026</p> 
+				<p style="text-align:right; color: #ebcc02; font-size:15px; font-family: 'Zen Kurenaido', system-ui; line-height: 1.5;">&copy; У. Медведева, 2026</p> 
 			</div>
 		</footer>
 	</body>
